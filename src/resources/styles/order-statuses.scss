@@ -1,0 +1,16 @@
+@source inline("border-status-{pending,confirmed,in_picking,packing,in_transit,delivered,canceled,rejected,complete,closed}");
+@source inline("text-status-{pending,confirmed,in_picking,packing,in_transit,delivered,canceled,rejected,complete,closed}");
+@source inline("bg-status-{pending,confirmed,in_picking,packing,in_transit,delivered,canceled,rejected,complete,closed}/10");
+
+@theme {
+    --color-status-pending: #F5AD48;
+    --color-status-confirmed: #43A53D;
+    --color-status-in_picking: #20A9E2;
+    --color-status-packing: #FFE050;
+    --color-status-in_transit: #00B2C9;
+    --color-status-delivered: #1A0030;
+    --color-status-canceled: #EC6D74;
+    --color-status-rejected: #EC6D74;
+    --color-status-complete: #2E008B;
+    --color-status-closed: #EC6D74;
+}

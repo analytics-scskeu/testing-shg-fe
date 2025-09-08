@@ -1,0 +1,174 @@
+@source inline('{sm:,md:,lg:,xl:,}flex grid, grid-cols-2 mb-3');
+
+@theme {
+    /** API html design **/
+    --color-body: #1a0030;
+
+    /*--color-primary-lighter: #7a78ad;*/
+    --color-primary: #221e77;
+    /*--color-primary-darker: #141247;*/
+    /*--color-primary-offset: #2e008b;*/
+
+    /*--color-secondary-lighter: #79cbee;*/
+    /*--color-secondary: #20a9e2;*/
+    /*--color-secondary-darker: #136588;*/
+
+    /*--color-background-lighter: #fbfbfb;*/
+    /*--color-background: #f8f8f8; !* DEFAULT *!*/
+    /*--color-background-darker: #959595;*/
+
+    /*--color-info: #221e77;*/
+    /*--color-success: #43a53d;*/
+    /*--color-warning: #f5ad48;*/
+    /*--color-danger: #e5646a;*/
+
+    /*--color-blue-50: #e6f1f9;*/
+    /*--color-blue-100: #cce3f3;*/
+    /*--color-blue-200: #99c7e7;*/
+    /*--color-blue-300: #66acda;*/
+    /*--color-blue-400: #3390ce;*/
+    /*--color-blue: #0074c2; !* DEFAULT *!*/
+    /*--color-blue-600: #005d9b;*/
+    /*--color-blue-700: #004674;*/
+    /*--color-blue-800: #002e4e;*/
+    /*--color-blue-900: #001727;*/
+
+    /*--color-lightblue-50: #e6f8fd;*/
+    /*--color-lightblue-100: #cdf0fb;*/
+    /*--color-lightblue-200: #9be1f7;*/
+    /*--color-lightblue-300: #6ad3f2;*/
+    /*--color-lightblue-400: #38c4ee;*/
+    /*--color-lightblue: #06b5ea; !* DEFAULT *!*/
+    /*--color-lightblue-600: #0591bb;*/
+    /*--color-lightblue-700: #046d8c;*/
+    /*--color-lightblue-800: #02485e;*/
+    /*--color-lightblue-900: #01242f;*/
+
+    /*--color-turquoise-50: #e6f7f8;*/
+    /*--color-turquoise-100: #cceef1;*/
+    /*--color-turquoise-200: #99dde3;*/
+    /*--color-turquoise-300: #66ccd6;*/
+    /*--color-turquoise-400: #33bbc8;*/
+    /*--color-turquoise: #00aaba; !* DEFAULT *!*/
+    /*--color-turquoise-600: #008895;*/
+    /*--color-turquoise-700: #006670;*/
+    /*--color-turquoise-800: #00444a;*/
+    /*--color-turquoise-900: #002225;*/
+
+    /*--color-purple-50: #f2eff5;*/
+    /*--color-purple-100: #e5e0ec;*/
+    /*--color-purple-200: #cac1d9;*/
+    /*--color-purple-300: #b0a1c5;*/
+    /*--color-purple-400: #9582b2;*/
+    /*--color-purple: #7b639f; !* DEFAULT *!*/
+    /*--color-purple-600: #624f7f;*/
+    /*--color-purple-700: #4a3b5f;*/
+    /*--color-purple-800: #312840;*/
+    /*--color-purple-900: #191420;*/
+
+    /*--color-gray-12: #14142a1f;*/
+    /*--color-gray-50: #f3f3f3;*/
+    /*--color-gray-100: #e7e7e7;*/
+    /*--color-gray-200: #d0d0d0;*/
+    /*--color-gray-300: #b8b8b8;*/
+    /*--color-gray-400: #a1a1a1;*/
+    /*--color-gray: #898989; !* DEFAULT *!*/
+    /*--color-gray-600: #6e6e6e;*/
+    /*--color-gray-700: #525252;*/
+    /*--color-gray-800: #373737;*/
+    /*--color-gray-900: #1b1b1b;*/
+
+    /*--color-green-50: #ecf7eb;*/
+    /*--color-green-100: #daefd7;*/
+    /*--color-green-200: #b5dfae;*/
+    /*--color-green-300: #8fd086;*/
+    /*--color-green-400: #6ac05d;*/
+    /*--color-green: #45b035; !* DEFAULT *!*/
+    /*--color-green-600: #378d2a;*/
+    /*--color-green-700: #296a20;*/
+    /*--color-green-800: #1c4615;*/
+    /*--color-green-900: #0e230b;*/
+
+    /*--color-red-50: #fdf0f1;*/
+    /*--color-red-100: #fbe2e3;*/
+    /*--color-red-200: #f7c5c7;*/
+    /*--color-red-300: #f4a7ab;*/
+    /*--color-red-400: #f08a8f;*/
+    /*--color-red: #ec6d73; !* DEFAULT *!*/
+    /*--color-red-600: #bd575c;*/
+    /*--color-red-700: #8e4145;*/
+    /*--color-red-800: #5e2c2e;*/
+    /*--color-red-900: #2f1617;*/
+
+    /*--color-orange-50: #fff8ed;*/
+    /*--color-orange-100: #fff0db;*/
+    /*--color-orange-200: #ffe1b7;*/
+    /*--color-orange-300: #ffd293;*/
+    /*--color-orange-400: #ffc36f;*/
+    /*--color-orange: #ffb44b; !* DEFAULT *!*/
+    /*--color-orange-600: #cc903c;*/
+    /*--color-orange-700: #996c2d;*/
+    /*--color-orange-800: #66481e;*/
+    /*--color-orange-900: #33240f;*/
+
+    /*--color-yellow-50: #fffcec;*/
+    /*--color-yellow-100: #fff9d9;*/
+    /*--color-yellow-200: #fff3b2;*/
+    /*--color-yellow-300: #ffee8c;*/
+    /*--color-yellow-400: #ffe865;*/
+    /*--color-yellow: #ffe23f; !* DEFAULT *!*/
+    /*--color-yellow-600: #ccb532;*/
+    /*--color-yellow-700: #998826;*/
+    /*--color-yellow-800: #665a19;*/
+    /*--color-yellow-900: #332d0d;*/
+
+    /*--color-workpiece-blue: #20a9e2;*/
+    /*--color-workpiece-yellow: #ffdf50;*/
+    /*--color-workpiece-red: #e5646a;*/
+    /*--color-workpiece-green: #43a53d;*/
+    /*--color-workpiece-dark-red: #c5514d;*/
+    /*--color-workpiece-gray: #7d7d7d;*/
+
+    /*--color-status-received: "";*/
+    /*--color-status-fraud: "";*/
+    /*--color-status-pending-payment: "";*/
+    /*--color-status-payment-review: "";*/
+    /*--color-status-holded: "";*/
+    /*--color-status-pending: #f5ad48;*/
+    /*--color-status-confirmed: #43a53d;*/
+    /*--color-status-processing: "";*/
+    /*--color-status-in-picking: #20a9e2;*/
+    /*--color-status-packing: #ffe050;*/
+    /*--color-status-in-transit: #00b2c9;*/
+    /*--color-status-delivered: #1a0030;*/
+    /*--color-status-canceled: #ec6d74;*/
+    /*--color-status-rejected: #ec6d74;*/
+    /*--color-status-complete: #2e008b;*/
+    /*--color-status-closed: #ec6d74;*/
+
+    /* Text Colors (overrides default text color) */
+    /*--text-color-DEFAULT: #1a0030;*/
+    /*--text-color-body: #1a0030;*/
+
+    /* Background Colors */
+    /*--background-color-container-lighter: #fbfbfb;*/
+    --background-color-container: #f8f8f8;
+    /*--background-color-container-darker: #959595;*/
+    /*--background-color-white-opaque-16: rgba(255, 255, 255, 0.16);*/
+    /*--background-color-gray-240: rgba(240, 240, 240, 1);*/
+
+    /* Backdrop Blur */
+    /*--backdrop-blur-13: 13px;*/
+
+    /*!* Border Colors *!*/
+    /*--border-color-container-lighter: #fbfbfb;*/
+    /*--border-color-container: #f8f8f8; !* DEFAULT *!*/
+    /*--border-color-container-darker: #959595;*/
+
+    /* Transition Property */
+    /* This will be directly applied via CSS variables. */
+    --transition-property-buttons:
+        color, background-color, border-color, text-decoration-color, fill, stroke, background, background-size,
+        box-shadow;
+}
+

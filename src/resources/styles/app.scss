@@ -1,0 +1,324 @@
+@use "tailwindcss";
+
+@use "api-html-theme";
+@use "order-statuses";
+@use "page-builder";
+@use "border-spacing";
+@use "datepicker";
+
+@config "../../../tailwind.config.mjs";
+
+@theme {
+    --color-link: #2e008b;
+    --color-shade1: #1a0030;
+    --color-primary-shade1: #221e77;
+    --color-primary-shade2: #4b2bab;
+    --color-primary-shade3: #3f38dd;
+    --color-secondary-shade1: #6c68c1;
+    --color-secondary-shade2: #8e72e0;
+    --color-secondary-shade3: #928df1;
+    --color-gray-shade1: #1a0030CC;
+    --color-gray-shade2: #1a003030;
+    --color-gray-shade3: #f8f8f8;
+    --color-gray-shade4: #e5e7eb;
+    --color-gray-shade5: #f0f0f0;
+    --color-success-shade1: #25a720;
+    --color-success-shade2: #25a720;
+    --color-warning-shade1: #ff8c17;
+    --color-warning-shade2: #ff8c17;
+    --color-danger: #e5646a;
+    --color-danger-shade1: #E5646AFF;
+    --color-danger-shade2: #bd0000;
+
+    --color-workpiece-P: #20a9e2;
+    --color-workpiece-M: #ffdf50;
+    --color-workpiece-K: #e5646a;
+    --color-workpiece-N: #43a53d;
+    --color-workpiece-S: #c5514d;
+    --color-workpiece-H: #7d7d7d;
+    --font-weight-semibold: 500;
+
+    /* Font Families */
+    /* This overrides the default font-sans to use Gotham */
+    --font-sans: "Gotham", "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+
+    /* Shadows */
+    --shadow-long: 0px 7px 15px 0px #0000000d, 0px 27px 27px 0px #0000000a, 0px 61px 37px 0px #00000008,
+    0px 109px 44px 0px #00000003, 0px 171px 48px 0px #00000000;
+}
+
+:root {
+    --breakpoint-3xl: 103.125rem;
+}
+
+@media print {
+    header, footer {
+        display: none;
+    }
+    #product-share-tooltip {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Black_Web.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-BlackItalic_Web.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Ultra_Web.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-UltraItalic_Web.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Bold_Web.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-BoldItalic_Web.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Medium_Web.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-MediumItalic_Web.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Book_Web.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-BookItalic_Web.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Light_Web.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-LightItalic_Web.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-XLight_Web.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-XLightItalic_Web.woff2") format("woff2");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-Thin_Web.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url("/fonts/Gotham/Gotham-ThinItalic_Web.woff2") format("woff2");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    @apply text-shade1 font-sans;
+}
+
+/*img, video {*/
+/*    width: auto;*/
+/*}*/
+
+@media screen and (max-width: 1365px) {
+    #logo img {
+        max-width: 130px;
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .hover-after-trapezoid:hover::after {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
+        background: white;
+        -webkit-mask: linear-gradient(143.1deg, #fff 80%, transparent 0) top left;
+        mask: linear-gradient(143.1deg, #fff 83%, transparent 0) top left;
+        z-index: 0;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        display: block;
+    }
+
+    .slick-prev::before,
+    .slick-next::before {
+        content: none !important;
+    }
+
+    .slick-slider.slick-initialized {
+        width: 100%;
+        display: grid !important;
+    }
+
+    .testimonials {
+        .slick-dots li button:before {
+            color: #fff !important;
+        }
+    }
+
+    .slick-dots {
+        bottom: -29px !important;
+        li {
+            width: 24px !important;
+            height: 24px !important;
+            margin: 0 !important;
+            button {
+                width: 24px !important;
+                height: 24px !important;
+                &:before {
+                    font-size: 12px !important;
+                    width: 24px !important;
+                    height: 24px !important;
+                }
+            }
+        }
+    }
+
+    .slick-list {
+        @apply mx-0;
+    }
+
+    .mobile_banner_section {
+        .slick-active button:before {
+            opacity: 0.75 !important;
+            color: var(--color-link) !important;
+        }
+
+        .slick-dots li:not(.slick-active) button:before {
+            color: var(--color-shade1) !important;
+            opacity: 0.15 !important;
+        }
+
+        .slick-arrow {
+            display: none !important;
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .slick-prev {
+            left: -40px !important;
+        }
+        .slick-next {
+            right: -40px !important;
+        }
+        .banner-blur {
+            @apply w-[25%];
+        }
+    }
+
+    nav.desktop-main-nav li.level-0.menu-item-active .group {
+        @apply border-b-4 border-link;
+        @apply text-link;
+    }
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield; /* Safari and Chrome */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield;
+}
+
+/* Remove arrows/spinners from number input in Safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.gm-style-iw button[title="Close"] {
+    display: none !important;
+}

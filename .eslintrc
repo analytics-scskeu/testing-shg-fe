@@ -1,0 +1,73 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "react/jsx-uses-react": "off",
+        "react/jsx-no-undef": "error",
+        "react/jsx-uses-vars": "error",
+        "react/react-in-jsx-scope": "off",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "prettier/prettier": "error",
+        "react/prop-types": "off",
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectPattern": {
+                    "multiline": true
+                },
+                "ImportDeclaration": {
+                    "multiline": true
+                },
+                "ExportDeclaration": {
+                    "multiline": true
+                }
+            }
+        ],
+        "no-restricted-imports": [
+            "warn",
+            {
+                "name": "next/link",
+                "message": "Please import from `@/i18n/routing` instead."
+            },
+            {
+                "name": "next/navigation",
+                "importNames": [
+                    "useRouter"
+                ],
+                "message": "Please import from `@/i18n/routing` instead."
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

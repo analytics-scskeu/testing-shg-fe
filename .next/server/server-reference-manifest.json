@@ -1,0 +1,83 @@
+{
+  "node": {
+    "400fa8bdd9c26f86a2477b0a714a735611640117e5": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "403e99e750afeadd484b6f653740ffd6344d4137ed": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "40494688cf086f8512b0fd6be1b73800697be09180": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "40514a3b2786c87b456a70253195c36b9979fddfb4": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "40aa27088a049bf961a21e5352fb3b4f773d959135": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "6099533d404b123573f6f25ef0797983e0b638ed2b": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    },
+    "7882e5b19e3622d79d2edd554f48a610ea90d87528": {
+      "workers": {
+        "app/[locale]/(pages)/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fgeorge.brooks%2Fdev%2FSHG%2Ffe%2Fsumitomotool-front%2Fsrc%2Futils%2Fsession.js%22%2C%5B%7B%22id%22%3A%22400fa8bdd9c26f86a2477b0a714a735611640117e5%22%2C%22exportedName%22%3A%22decrypt%22%7D%2C%7B%22id%22%3A%22403e99e750afeadd484b6f653740ffd6344d4137ed%22%2C%22exportedName%22%3A%22encrypt%22%7D%2C%7B%22id%22%3A%2240494688cf086f8512b0fd6be1b73800697be09180%22%2C%22exportedName%22%3A%22getUserSession%22%7D%2C%7B%22id%22%3A%2240514a3b2786c87b456a70253195c36b9979fddfb4%22%2C%22exportedName%22%3A%22getCookie%22%7D%2C%7B%22id%22%3A%2240aa27088a049bf961a21e5352fb3b4f773d959135%22%2C%22exportedName%22%3A%22removeCookie%22%7D%2C%7B%22id%22%3A%226099533d404b123573f6f25ef0797983e0b638ed2b%22%2C%22exportedName%22%3A%22getUserPermissions%22%7D%2C%7B%22id%22%3A%227882e5b19e3622d79d2edd554f48a610ea90d87528%22%2C%22exportedName%22%3A%22setCookie%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/[locale]/(pages)/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "NLORhGlkk4izivOP59+QENPocAnc24NNmBoSZKIod+4="
+}

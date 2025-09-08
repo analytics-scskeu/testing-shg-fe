@@ -1,0 +1,84 @@
+@layer base {
+    :root {
+        --spacing-1b: calc(var(--spacing) * 1 - 1px);
+        --spacing-2b: calc(var(--spacing) * 2 - 1px);
+        --spacing-3b: calc(var(--spacing) * 3 - 1px);
+        --spacing-4b: calc(var(--spacing) * 4 - 1px);
+        --spacing-5b: calc(var(--spacing) * 5 - 1px);
+        --spacing-6b: calc(var(--spacing) * 6 - 1px);
+    }
+}
+
+@layer utilities {
+    /* All padding (p-) */
+    .p-1b { padding: var(--spacing-1b); }
+    .p-2b { padding: var(--spacing-2b); }
+    .p-3b { padding: var(--spacing-3b); }
+    .p-4b { padding: var(--spacing-4b); }
+    .p-5b { padding: var(--spacing-5b); }
+    .p-6b { padding: var(--spacing-6b); }
+
+    /* Horizontal padding (px-) */
+    .px-1b { padding-inline: var(--spacing-1b); }
+    .px-2b { padding-inline: var(--spacing-2b); }
+    .px-3b { padding-inline: var(--spacing-3b); }
+    .px-4b { padding-inline: var(--spacing-4b); }
+    .px-5b { padding-inline: var(--spacing-5b); }
+    .px-6b { padding-inline: var(--spacing-6b); }
+
+    /* Vertical padding (py-) */
+    .py-1b { padding-block: var(--spacing-1b); }
+    .py-2b { padding-block: var(--spacing-2b); }
+    .py-3b { padding-block: var(--spacing-3b); }
+    .py-4b { padding-block: var(--spacing-4b); }
+    .py-5b { padding-block: var(--spacing-5b); }
+    .py-6b { padding-block: var(--spacing-6b); }
+
+    /* Padding top (pt-) */
+    .pt-1b { padding-top: var(--spacing-1b); }
+    .pt-2b { padding-top: var(--spacing-2b); }
+    .pt-3b { padding-top: var(--spacing-3b); }
+    .pt-4b { padding-top: var(--spacing-4b); }
+    .pt-5b { padding-top: var(--spacing-5b); }
+    .pt-6b { padding-top: var(--spacing-6b); }
+
+    /* Padding right (pr-) */
+    .pr-1b { padding-right: var(--spacing-1b); }
+    .pr-2b { padding-right: var(--spacing-2b); }
+    .pr-3b { padding-right: var(--spacing-3b); }
+    .pr-4b { padding-right: var(--spacing-4b); }
+    .pr-5b { padding-right: var(--spacing-5b); }
+    .pr-6b { padding-right: var(--spacing-6b); }
+
+    /* Padding bottom (pb-) */
+    .pb-1b { padding-bottom: var(--spacing-1b); }
+    .pb-2b { padding-bottom: var(--spacing-2b); }
+    .pb-3b { padding-bottom: var(--spacing-3b); }
+    .pb-4b { padding-bottom: var(--spacing-4b); }
+    .pb-5b { padding-bottom: var(--spacing-5b); }
+    .pb-6b { padding-bottom: var(--spacing-6b); }
+
+    /* Padding left (pl-) */
+    .pl-1b { padding-left: var(--spacing-1b); }
+    .pl-2b { padding-left: var(--spacing-2b); }
+    .pl-3b { padding-left: var(--spacing-3b); }
+    .pl-4b { padding-left: var(--spacing-4b); }
+    .pl-5b { padding-left: var(--spacing-5b); }
+    .pl-6b { padding-left: var(--spacing-6b); }
+
+    /* Padding start (ps-) - for logical properties */
+    .ps-1b { padding-inline-start: var(--spacing-1b); }
+    .ps-2b { padding-inline-start: var(--spacing-2b); }
+    .ps-3b { padding-inline-start: var(--spacing-3b); }
+    .ps-4b { padding-inline-start: var(--spacing-4b); }
+    .ps-5b { padding-inline-start: var(--spacing-5b); }
+    .ps-6b { padding-inline-start: var(--spacing-6b); }
+
+    /* Padding end (pe-) - for logical properties */
+    .pe-1b { padding-inline-end: var(--spacing-1b); }
+    .pe-2b { padding-inline-end: var(--spacing-2b); }
+    .pe-3b { padding-inline-end: var(--spacing-3b); }
+    .pe-4b { padding-inline-end: var(--spacing-4b); }
+    .pe-5b { padding-inline-end: var(--spacing-5b); }
+    .pe-6b { padding-inline-end: var(--spacing-6b); }
+}

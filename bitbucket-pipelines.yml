@@ -1,0 +1,21 @@
+image: atlassian/default-image:latest
+pipelines:
+    branches:
+        master:
+            - step:
+                name: 'Deployment to Staging'
+                deployment: Staging
+                runtime:
+                cloud:
+                atlassian-ip-ranges: true
+                script:
+                    -   pipe: atlassian/ssh-run:0.8.1
+                        variables:
+                            SSH_USER: 'dev'
+                            SERVER: '176.9.112.172'
+                            SSH_KEY: $SSH_PRIVATE_KEY
+                            PORT: 52723
+                            COMMAND: >
+                                APP_NAME="sumitomotool-front-node"
+                                APP_DIR="/var/www/docker/frontsumitomotool"
+                                bash $APP_DIR/scripts/deploy.sh
